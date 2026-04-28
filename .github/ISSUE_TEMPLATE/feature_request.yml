@@ -1,0 +1,56 @@
+name: ✨ Feature Request
+description: Suggest a new feature or improvement for Subtitle Translator — English → Arabic
+title: "[Feature]: "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Subtitle Translator — Feature Request
+        Have an idea that would make the extension better? We'd love to hear it. Please fill out the form below so we can understand your suggestion clearly.
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem / Motivation
+      description: Is your feature request related to a problem? Describe it.
+      placeholder: "e.g. I can't adjust the font size of the Arabic subtitle overlay."
+    validations:
+      required: true
+
+  - type: textarea
+    id: solution
+    attributes:
+      label: Proposed Solution
+      description: Describe the feature or change you'd like to see.
+      placeholder: "e.g. Add a font-size slider in the popup so users can resize the overlay text."
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives Considered
+      description: Have you considered any alternative solutions or workarounds?
+      placeholder: "e.g. I tried using browser zoom but it affects the whole page."
+    validations:
+      required: false
+
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Priority (your perspective)
+      options:
+        - Nice to have
+        - Would improve my experience significantly
+        - Blocking — I can't use the extension without it
+    validations:
+      required: true
+
+  - type: textarea
+    id: extra
+    attributes:
+      label: Additional Context
+      description: Mockups, screenshots, links, or any other supporting information.
+    validations:
+      required: false

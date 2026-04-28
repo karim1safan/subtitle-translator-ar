@@ -1,0 +1,92 @@
+name: 🐛 Bug Report
+description: Report a problem with Subtitle Translator — English → Arabic
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Subtitle Translator — Bug Report
+        Thanks for taking the time to fill out this bug report. Please provide as much detail as possible so we can reproduce and fix the issue quickly.
+
+  - type: dropdown
+    id: site
+    attributes:
+      label: Site / Platform
+      description: On which site did the issue occur?
+      options:
+        - YouTube
+        - AWS Academy
+        - Vimeo
+        - Other (specify in description)
+    validations:
+      required: true
+
+  - type: dropdown
+    id: browser
+    attributes:
+      label: Browser
+      description: Which browser are you using?
+      options:
+        - Chrome
+        - Firefox
+        - Edge
+        - Other (specify in description)
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Bug Description
+      description: A clear and concise description of what the bug is.
+      placeholder: "e.g. Arabic subtitles don't appear on YouTube after enabling the toggle."
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to Reproduce
+      description: Step-by-step instructions to reproduce the issue.
+      placeholder: |
+        1. Go to a YouTube video with English subtitles
+        2. Open the extension popup and enable Translation
+        3. ...
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected Behavior
+      description: What did you expect to happen?
+      placeholder: "The Arabic subtitle overlay should appear at the bottom of the video."
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual Behavior
+      description: What actually happened?
+      placeholder: "No overlay appeared even though the toggle was on."
+    validations:
+      required: true
+
+  - type: input
+    id: version
+    attributes:
+      label: Extension Version
+      description: Found in chrome://extensions next to "Subtitle Translator".
+      placeholder: "e.g. 1.0.0"
+    validations:
+      required: false
+
+  - type: textarea
+    id: extra
+    attributes:
+      label: Additional Context
+      description: Screenshots, console errors, or any other context that might help.
+    validations:
+      required: false
